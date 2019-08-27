@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:i0="http://www.vtechnologies.com/2011/11/StarShip/WebServices/Ship" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="ShipTransactions" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:import namespace="http://www.vtechnologies.com/2011/11/StarShip/WebServices/Ship" location="http://dev00:3316/Ship?wsdl=wsdl0" />
+  <wsdl:types />
+  <wsdl:binding name="BasicHttpBinding_IShip" type="i0:IShip">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="AddShipment">
+      <soap:operation soapAction="http://www.vtechnologies.com/2011/11/StarShip/WebServices/Ship/IShip/AddShipment" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateShipment">
+      <soap:operation soapAction="http://www.vtechnologies.com/2011/11/StarShip/WebServices/Ship/IShip/CreateShipment" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateShipmentFromSourceID">
+      <soap:operation soapAction="http://www.vtechnologies.com/2011/11/StarShip/WebServices/Ship/IShip/CreateShipmentFromSourceID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetShipment">
+      <soap:operation soapAction="http://www.vtechnologies.com/2011/11/StarShip/WebServices/Ship/IShip/GetShipment" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateShipment">
+      <soap:operation soapAction="http://www.vtechnologies.com/2011/11/StarShip/WebServices/Ship/IShip/UpdateShipment" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddPackage">
+      <soap:operation soapAction="http://www.vtechnologies.com/2011/11/StarShip/WebServices/Ship/IShip/AddPackage" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddPallet">
+      <soap:operation soapAction="http://www.vtechnologies.com/2011/11/StarShip/WebServices/Ship/IShip/AddPallet" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Palletize">
+      <soap:operation soapAction="http://www.vtechnologies.com/2011/11/StarShip/WebServices/Ship/IShip/Palletize" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeletePackage">
+      <soap:operation soapAction="http://www.vtechnologies.com/2011/11/StarShip/WebServices/Ship/IShip/DeletePackage" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeletePallet">
+      <soap:operation soapAction="http://www.vtechnologies.com/2011/11/StarShip/WebServices/Ship/IShip/DeletePallet" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteShipment">
+      <soap:operation soapAction="http://www.vtechnologies.com/2011/11/StarShip/WebServices/Ship/IShip/DeleteShipment" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VoidPackage">
+      <soap:operation soapAction="http://www.vtechnologies.com/2011/11/StarShip/WebServices/Ship/IShip/VoidPackage" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VoidShipment">
+      <soap:operation soapAction="http://www.vtechnologies.com/2011/11/StarShip/WebServices/Ship/IShip/VoidShipment" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ShipShipment">
+      <soap:operation soapAction="http://www.vtechnologies.com/2011/11/StarShip/WebServices/Ship/IShip/ShipShipment" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ShipShipmentByID">
+      <soap:operation soapAction="http://www.vtechnologies.com/2011/11/StarShip/WebServices/Ship/IShip/ShipShipmentByID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ShipSourceDocument">
+      <soap:operation soapAction="http://www.vtechnologies.com/2011/11/StarShip/WebServices/Ship/IShip/ShipSourceDocument" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ShipSourceDocumentByID">
+      <soap:operation soapAction="http://www.vtechnologies.com/2011/11/StarShip/WebServices/Ship/IShip/ShipSourceDocumentByID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetShippingDocuments">
+      <soap:operation soapAction="http://www.vtechnologies.com/2011/11/StarShip/WebServices/Ship/IShip/GetShippingDocuments" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchSourceDocuments">
+      <soap:operation soapAction="http://www.vtechnologies.com/2011/11/StarShip/WebServices/Ship/IShip/SearchSourceDocuments" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoadSourceDocument">
+      <soap:operation soapAction="http://www.vtechnologies.com/2011/11/StarShip/WebServices/Ship/IShip/LoadSourceDocument" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PrintShippingDocument">
+      <soap:operation soapAction="http://www.vtechnologies.com/2011/11/StarShip/WebServices/Ship/IShip/PrintShippingDocument" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WritebackShipmentByID">
+      <soap:operation soapAction="http://www.vtechnologies.com/2011/11/StarShip/WebServices/Ship/IShip/WritebackShipmentByID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ShipTransactions">
+    <wsdl:port name="BasicHttpBinding_IShip" binding="tns:BasicHttpBinding_IShip">
+      <soap:address location="http://dev00:3316/Ship" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

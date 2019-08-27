@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://www.vtechnologies.com/2011/11/StarShip/WebServices/Ship" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.vtechnologies.com/2011/11/StarShip/WebServices/Ship" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://www.vtechnologies.com/2011/11/StarShip/WebServices/Ship/Imports">
+      <xsd:import schemaLocation="http://dev00:3316/Ship?xsd=xsd0" namespace="http://www.vtechnologies.com/2011/11/StarShip/WebServices/Ship" />
+      <xsd:import schemaLocation="http://dev00:3316/Ship?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://dev00:3316/Ship?xsd=xsd2" namespace="http://www.vtechnologies.com/2011/11/StarShip/WebServices/Model" />
+      <xsd:import schemaLocation="http://dev00:3316/Ship?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/VTechnologies.StarShip.WebServices.Model" />
+      <xsd:import schemaLocation="http://dev00:3316/Ship?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/VTechnologies.StarShip.WebServices.Model.Source" />
+      <xsd:import schemaLocation="http://dev00:3316/Ship?xsd=xsd5" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <xsd:import schemaLocation="http://dev00:3316/Ship?xsd=xsd6" namespace="http://schemas.datacontract.org/2004/07/VTechnologies.SourceShared.Model" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IShip_AddShipment_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddShipment" />
+  </wsdl:message>
+  <wsdl:message name="IShip_AddShipment_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddShipmentResponse" />
+  </wsdl:message>
+  <wsdl:message name="IShip_CreateShipment_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateShipment" />
+  </wsdl:message>
+  <wsdl:message name="IShip_CreateShipment_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateShipmentResponse" />
+  </wsdl:message>
+  <wsdl:message name="IShip_CreateShipmentFromSourceID_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateShipmentFromSourceID" />
+  </wsdl:message>
+  <wsdl:message name="IShip_CreateShipmentFromSourceID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateShipmentFromSourceIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IShip_GetShipment_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetShipment" />
+  </wsdl:message>
+  <wsdl:message name="IShip_GetShipment_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetShipmentResponse" />
+  </wsdl:message>
+  <wsdl:message name="IShip_UpdateShipment_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateShipment" />
+  </wsdl:message>
+  <wsdl:message name="IShip_UpdateShipment_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateShipmentResponse" />
+  </wsdl:message>
+  <wsdl:message name="IShip_AddPackage_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddPackage" />
+  </wsdl:message>
+  <wsdl:message name="IShip_AddPackage_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddPackageResponse" />
+  </wsdl:message>
+  <wsdl:message name="IShip_AddPallet_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddPallet" />
+  </wsdl:message>
+  <wsdl:message name="IShip_AddPallet_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddPalletResponse" />
+  </wsdl:message>
+  <wsdl:message name="IShip_Palletize_InputMessage">
+    <wsdl:part name="parameters" element="tns:Palletize" />
+  </wsdl:message>
+  <wsdl:message name="IShip_Palletize_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PalletizeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IShip_DeletePackage_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeletePackage" />
+  </wsdl:message>
+  <wsdl:message name="IShip_DeletePackage_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeletePackageResponse" />
+  </wsdl:message>
+  <wsdl:message name="IShip_DeletePallet_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeletePallet" />
+  </wsdl:message>
+  <wsdl:message name="IShip_DeletePallet_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeletePalletResponse" />
+  </wsdl:message>
+  <wsdl:message name="IShip_DeleteShipment_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteShipment" />
+  </wsdl:message>
+  <wsdl:message name="IShip_DeleteShipment_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteShipmentResponse" />
+  </wsdl:message>
+  <wsdl:message name="IShip_VoidPackage_InputMessage">
+    <wsdl:part name="parameters" element="tns:VoidPackage" />
+  </wsdl:message>
+  <wsdl:message name="IShip_VoidPackage_OutputMessage">
+    <wsdl:part name="parameters" element="tns:VoidPackageResponse" />
+  </wsdl:message>
+  <wsdl:message name="IShip_VoidShipment_InputMessage">
+    <wsdl:part name="parameters" element="tns:VoidShipment" />
+  </wsdl:message>
+  <wsdl:message name="IShip_VoidShipment_OutputMessage">
+    <wsdl:part name="parameters" element="tns:VoidShipmentResponse" />
+  </wsdl:message>
+  <wsdl:message name="IShip_ShipShipment_InputMessage">
+    <wsdl:part name="parameters" element="tns:ShipShipment" />
+  </wsdl:message>
+  <wsdl:message name="IShip_ShipShipment_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ShipShipmentResponse" />
+  </wsdl:message>
+  <wsdl:message name="IShip_ShipShipmentByID_InputMessage">
+    <wsdl:part name="parameters" element="tns:ShipShipmentByID" />
+  </wsdl:message>
+  <wsdl:message name="IShip_ShipShipmentByID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ShipShipmentByIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IShip_ShipSourceDocument_InputMessage">
+    <wsdl:part name="parameters" element="tns:ShipSourceDocument" />
+  </wsdl:message>
+  <wsdl:message name="IShip_ShipSourceDocument_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ShipSourceDocumentResponse" />
+  </wsdl:message>
+  <wsdl:message name="IShip_ShipSourceDocumentByID_InputMessage">
+    <wsdl:part name="parameters" element="tns:ShipSourceDocumentByID" />
+  </wsdl:message>
+  <wsdl:message name="IShip_ShipSourceDocumentByID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ShipSourceDocumentByIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IShip_GetShippingDocuments_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetShippingDocuments" />
+  </wsdl:message>
+  <wsdl:message name="IShip_GetShippingDocuments_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetShippingDocumentsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IShip_SearchSourceDocuments_InputMessage">
+    <wsdl:part name="parameters" element="tns:SearchSourceDocuments" />
+  </wsdl:message>
+  <wsdl:message name="IShip_SearchSourceDocuments_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SearchSourceDocumentsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IShip_LoadSourceDocument_InputMessage">
+    <wsdl:part name="parameters" element="tns:LoadSourceDocument" />
+  </wsdl:message>
+  <wsdl:message name="IShip_LoadSourceDocument_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LoadSourceDocumentResponse" />
+  </wsdl:message>
+  <wsdl:message name="IShip_PrintShippingDocument_InputMessage">
+    <wsdl:part name="parameters" element="tns:PrintShippingDocument" />
+  </wsdl:message>
+  <wsdl:message name="IShip_PrintShippingDocument_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PrintShippingDocumentResponse" />
+  </wsdl:message>
+  <wsdl:message name="IShip_WritebackShipmentByID_InputMessage">
+    <wsdl:part name="parameters" element="tns:WritebackShipmentByID" />
+  </wsdl:message>
+  <wsdl:message name="IShip_WritebackShipmentByID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:WritebackShipmentByIDResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IShip">
+    <wsdl:operation name="AddShipment">
+      <wsdl:input wsaw:Action="http://www.vtechnologies.com/2011/11/StarShip/WebServices/Ship/IShip/AddShipment" message="tns:IShip_AddShipment_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.vtechnologies.com/2011/11/StarShip/WebServices/Ship/IShip/AddShipmentResponse" message="tns:IShip_AddShipment_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateShipment">
+      <wsdl:input wsaw:Action="http://www.vtechnologies.com/2011/11/StarShip/WebServices/Ship/IShip/CreateShipment" message="tns:IShip_CreateShipment_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.vtechnologies.com/2011/11/StarShip/WebServices/Ship/IShip/CreateShipmentResponse" message="tns:IShip_CreateShipment_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateShipmentFromSourceID">
+      <wsdl:input wsaw:Action="http://www.vtechnologies.com/2011/11/StarShip/WebServices/Ship/IShip/CreateShipmentFromSourceID" message="tns:IShip_CreateShipmentFromSourceID_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.vtechnologies.com/2011/11/StarShip/WebServices/Ship/IShip/CreateShipmentFromSourceIDResponse" message="tns:IShip_CreateShipmentFromSourceID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetShipment">
+      <wsdl:input wsaw:Action="http://www.vtechnologies.com/2011/11/StarShip/WebServices/Ship/IShip/GetShipment" message="tns:IShip_GetShipment_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.vtechnologies.com/2011/11/StarShip/WebServices/Ship/IShip/GetShipmentResponse" message="tns:IShip_GetShipment_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateShipment">
+      <wsdl:input wsaw:Action="http://www.vtechnologies.com/2011/11/StarShip/WebServices/Ship/IShip/UpdateShipment" message="tns:IShip_UpdateShipment_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.vtechnologies.com/2011/11/StarShip/WebServices/Ship/IShip/UpdateShipmentResponse" message="tns:IShip_UpdateShipment_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddPackage">
+      <wsdl:input wsaw:Action="http://www.vtechnologies.com/2011/11/StarShip/WebServices/Ship/IShip/AddPackage" message="tns:IShip_AddPackage_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.vtechnologies.com/2011/11/StarShip/WebServices/Ship/IShip/AddPackageResponse" message="tns:IShip_AddPackage_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddPallet">
+      <wsdl:input wsaw:Action="http://www.vtechnologies.com/2011/11/StarShip/WebServices/Ship/IShip/AddPallet" message="tns:IShip_AddPallet_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.vtechnologies.com/2011/11/StarShip/WebServices/Ship/IShip/AddPalletResponse" message="tns:IShip_AddPallet_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Palletize">
+      <wsdl:input wsaw:Action="http://www.vtechnologies.com/2011/11/StarShip/WebServices/Ship/IShip/Palletize" message="tns:IShip_Palletize_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.vtechnologies.com/2011/11/StarShip/WebServices/Ship/IShip/PalletizeResponse" message="tns:IShip_Palletize_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeletePackage">
+      <wsdl:input wsaw:Action="http://www.vtechnologies.com/2011/11/StarShip/WebServices/Ship/IShip/DeletePackage" message="tns:IShip_DeletePackage_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.vtechnologies.com/2011/11/StarShip/WebServices/Ship/IShip/DeletePackageResponse" message="tns:IShip_DeletePackage_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeletePallet">
+      <wsdl:input wsaw:Action="http://www.vtechnologies.com/2011/11/StarShip/WebServices/Ship/IShip/DeletePallet" message="tns:IShip_DeletePallet_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.vtechnologies.com/2011/11/StarShip/WebServices/Ship/IShip/DeletePalletResponse" message="tns:IShip_DeletePallet_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteShipment">
+      <wsdl:input wsaw:Action="http://www.vtechnologies.com/2011/11/StarShip/WebServices/Ship/IShip/DeleteShipment" message="tns:IShip_DeleteShipment_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.vtechnologies.com/2011/11/StarShip/WebServices/Ship/IShip/DeleteShipmentResponse" message="tns:IShip_DeleteShipment_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="VoidPackage">
+      <wsdl:input wsaw:Action="http://www.vtechnologies.com/2011/11/StarShip/WebServices/Ship/IShip/VoidPackage" message="tns:IShip_VoidPackage_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.vtechnologies.com/2011/11/StarShip/WebServices/Ship/IShip/VoidPackageResponse" message="tns:IShip_VoidPackage_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="VoidShipment">
+      <wsdl:input wsaw:Action="http://www.vtechnologies.com/2011/11/StarShip/WebServices/Ship/IShip/VoidShipment" message="tns:IShip_VoidShipment_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.vtechnologies.com/2011/11/StarShip/WebServices/Ship/IShip/VoidShipmentResponse" message="tns:IShip_VoidShipment_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ShipShipment">
+      <wsdl:input wsaw:Action="http://www.vtechnologies.com/2011/11/StarShip/WebServices/Ship/IShip/ShipShipment" message="tns:IShip_ShipShipment_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.vtechnologies.com/2011/11/StarShip/WebServices/Ship/IShip/ShipShipmentResponse" message="tns:IShip_ShipShipment_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ShipShipmentByID">
+      <wsdl:input wsaw:Action="http://www.vtechnologies.com/2011/11/StarShip/WebServices/Ship/IShip/ShipShipmentByID" message="tns:IShip_ShipShipmentByID_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.vtechnologies.com/2011/11/StarShip/WebServices/Ship/IShip/ShipShipmentByIDResponse" message="tns:IShip_ShipShipmentByID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ShipSourceDocument">
+      <wsdl:input wsaw:Action="http://www.vtechnologies.com/2011/11/StarShip/WebServices/Ship/IShip/ShipSourceDocument" message="tns:IShip_ShipSourceDocument_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.vtechnologies.com/2011/11/StarShip/WebServices/Ship/IShip/ShipSourceDocumentResponse" message="tns:IShip_ShipSourceDocument_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ShipSourceDocumentByID">
+      <wsdl:input wsaw:Action="http://www.vtechnologies.com/2011/11/StarShip/WebServices/Ship/IShip/ShipSourceDocumentByID" message="tns:IShip_ShipSourceDocumentByID_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.vtechnologies.com/2011/11/StarShip/WebServices/Ship/IShip/ShipSourceDocumentByIDResponse" message="tns:IShip_ShipSourceDocumentByID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetShippingDocuments">
+      <wsdl:input wsaw:Action="http://www.vtechnologies.com/2011/11/StarShip/WebServices/Ship/IShip/GetShippingDocuments" message="tns:IShip_GetShippingDocuments_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.vtechnologies.com/2011/11/StarShip/WebServices/Ship/IShip/GetShippingDocumentsResponse" message="tns:IShip_GetShippingDocuments_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SearchSourceDocuments">
+      <wsdl:input wsaw:Action="http://www.vtechnologies.com/2011/11/StarShip/WebServices/Ship/IShip/SearchSourceDocuments" message="tns:IShip_SearchSourceDocuments_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.vtechnologies.com/2011/11/StarShip/WebServices/Ship/IShip/SearchSourceDocumentsResponse" message="tns:IShip_SearchSourceDocuments_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="LoadSourceDocument">
+      <wsdl:input wsaw:Action="http://www.vtechnologies.com/2011/11/StarShip/WebServices/Ship/IShip/LoadSourceDocument" message="tns:IShip_LoadSourceDocument_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.vtechnologies.com/2011/11/StarShip/WebServices/Ship/IShip/LoadSourceDocumentResponse" message="tns:IShip_LoadSourceDocument_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="PrintShippingDocument">
+      <wsdl:input wsaw:Action="http://www.vtechnologies.com/2011/11/StarShip/WebServices/Ship/IShip/PrintShippingDocument" message="tns:IShip_PrintShippingDocument_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.vtechnologies.com/2011/11/StarShip/WebServices/Ship/IShip/PrintShippingDocumentResponse" message="tns:IShip_PrintShippingDocument_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="WritebackShipmentByID">
+      <wsdl:input wsaw:Action="http://www.vtechnologies.com/2011/11/StarShip/WebServices/Ship/IShip/WritebackShipmentByID" message="tns:IShip_WritebackShipmentByID_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.vtechnologies.com/2011/11/StarShip/WebServices/Ship/IShip/WritebackShipmentByIDResponse" message="tns:IShip_WritebackShipmentByID_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

@@ -1,0 +1,493 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{153D5922-E990-42D6-B707-9ED432E6CA3E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TryShipAPI</RootNamespace>
+    <AssemblyName>TryShipAPI</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service References\StarShipRateAPI\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\StarShipShipAPI\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="settings.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Service References\StarShipRateAPI\TryShipAPI.StarShipRateAPI.AddValueTranslationsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\StarShipRateAPI\TryShipAPI.StarShipRateAPI.AddValueTranslationsResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\StarShipRateAPI\TryShipAPI.StarShipRateAPI.ApplyRateResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\StarShipRateAPI\TryShipAPI.StarShipRateAPI.ApplyRateResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\StarShipRateAPI\TryShipAPI.StarShipRateAPI.ConvertToApiShipmentResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\StarShipRateAPI\TryShipAPI.StarShipRateAPI.ConvertToApiShipmentResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\StarShipRateAPI\TryShipAPI.StarShipRateAPI.ConvertToSourceDocumentResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\StarShipRateAPI\TryShipAPI.StarShipRateAPI.ConvertToSourceDocumentResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\StarShipRateAPI\TryShipAPI.StarShipRateAPI.GetAvailableServicesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\StarShipRateAPI\TryShipAPI.StarShipRateAPI.GetAvailableServicesResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\StarShipRateAPI\TryShipAPI.StarShipRateAPI.GetBrokerResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\StarShipRateAPI\TryShipAPI.StarShipRateAPI.GetCarrierDetailsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\StarShipRateAPI\TryShipAPI.StarShipRateAPI.GetCarrierDetailsResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\StarShipRateAPI\TryShipAPI.StarShipRateAPI.GetCompanyInfoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\StarShipRateAPI\TryShipAPI.StarShipRateAPI.GetCompanyInfoResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\StarShipRateAPI\TryShipAPI.StarShipRateAPI.GetCountriesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\StarShipRateAPI\TryShipAPI.StarShipRateAPI.GetCountriesResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\StarShipRateAPI\TryShipAPI.StarShipRateAPI.GetCustomerResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\StarShipRateAPI\TryShipAPI.StarShipRateAPI.GetCustomerResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\StarShipRateAPI\TryShipAPI.StarShipRateAPI.GetHazMatProfileResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\StarShipRateAPI\TryShipAPI.StarShipRateAPI.GetHazMatProfileResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\StarShipRateAPI\TryShipAPI.StarShipRateAPI.GetImporterResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\StarShipRateAPI\TryShipAPI.StarShipRateAPI.GetInventoryItemResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\StarShipRateAPI\TryShipAPI.StarShipRateAPI.GetInventoryItemResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\StarShipRateAPI\TryShipAPI.StarShipRateAPI.GetPackagingResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\StarShipRateAPI\TryShipAPI.StarShipRateAPI.GetPackagingResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\StarShipRateAPI\TryShipAPI.StarShipRateAPI.GetPartyResponseForTypeBroker.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\StarShipRateAPI\TryShipAPI.StarShipRateAPI.GetPartyResponseForTypeImporter.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\StarShipRateAPI\TryShipAPI.StarShipRateAPI.GetPartyResponseForTypeThirdParty.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\StarShipRateAPI\TryShipAPI.StarShipRateAPI.GetSettingsGroupResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\StarShipRateAPI\TryShipAPI.StarShipRateAPI.GetSettingsGroupResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\StarShipRateAPI\TryShipAPI.StarShipRateAPI.GetThirdPartyResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\StarShipRateAPI\TryShipAPI.StarShipRateAPI.LoadBrokersResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\StarShipRateAPI\TryShipAPI.StarShipRateAPI.LoadCarriersResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\StarShipRateAPI\TryShipAPI.StarShipRateAPI.LoadCarriersResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\StarShipRateAPI\TryShipAPI.StarShipRateAPI.LoadCustomersResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\StarShipRateAPI\TryShipAPI.StarShipRateAPI.LoadCustomersResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\StarShipRateAPI\TryShipAPI.StarShipRateAPI.LoadHazMatProfilesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\StarShipRateAPI\TryShipAPI.StarShipRateAPI.LoadHazMatProfilesResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\StarShipRateAPI\TryShipAPI.StarShipRateAPI.LoadImportersResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\StarShipRateAPI\TryShipAPI.StarShipRateAPI.LoadInventoryItemsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\StarShipRateAPI\TryShipAPI.StarShipRateAPI.LoadInventoryItemsResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\StarShipRateAPI\TryShipAPI.StarShipRateAPI.LoadLocationsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\StarShipRateAPI\TryShipAPI.StarShipRateAPI.LoadLocationsResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\StarShipRateAPI\TryShipAPI.StarShipRateAPI.LoadPackagingsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\StarShipRateAPI\TryShipAPI.StarShipRateAPI.LoadPackagingsResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\StarShipRateAPI\TryShipAPI.StarShipRateAPI.LoadPartiesResponseForTypeBroker.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\StarShipRateAPI\TryShipAPI.StarShipRateAPI.LoadPartiesResponseForTypeImporter.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\StarShipRateAPI\TryShipAPI.StarShipRateAPI.LoadPartiesResponseForTypeThirdParty.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\StarShipRateAPI\TryShipAPI.StarShipRateAPI.LoadShipViaResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\StarShipRateAPI\TryShipAPI.StarShipRateAPI.LoadShipViaScenariosResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\StarShipRateAPI\TryShipAPI.StarShipRateAPI.LoadThirdPartiesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\StarShipRateAPI\TryShipAPI.StarShipRateAPI.RateResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\StarShipRateAPI\TryShipAPI.StarShipRateAPI.RateResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\StarShipRateAPI\TryShipAPI.StarShipRateAPI.RateShopResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\StarShipRateAPI\TryShipAPI.StarShipRateAPI.RateShopResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\StarShipRateAPI\TryShipAPI.StarShipRateAPI.RateShopSourceDocumentResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\StarShipRateAPI\TryShipAPI.StarShipRateAPI.RateSourceDocumentResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\StarShipRateAPI\TryShipAPI.StarShipRateAPI.ValidateAddressResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\StarShipRateAPI\TryShipAPI.StarShipRateAPI.ValidateAddressResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\StarShipRateAPI\TryShipAPI.StarShipRateAPI.ValidateShipmentResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\StarShipRateAPI\TryShipAPI.StarShipRateAPI.ValidateShipmentResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\StarShipRateAPI\WebServicesServer.wsdl" />
+    <None Include="Service References\StarShipRateAPI\WebServicesServer.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\StarShipRateAPI\WebServicesServer1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\StarShipRateAPI\WebServicesServer2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\StarShipRateAPI\WebServicesServer3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\StarShipRateAPI\WebServicesServer4.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\StarShipRateAPI\WebServicesServer5.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\StarShipRateAPI\WebServicesServer6.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\StarShipRateAPI\WebServicesServer7.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\StarShipRateAPI\WebServicesServer8.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\StarShipRateAPI\WebServicesServer9.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\StarShipRateAPI\WebServicesTransactions.wsdl" />
+    <None Include="Service References\StarShipShipAPI\Ship.wsdl" />
+    <None Include="Service References\StarShipShipAPI\Ship.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\StarShipShipAPI\Ship1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\StarShipShipAPI\Ship2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\StarShipShipAPI\Ship3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\StarShipShipAPI\Ship4.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\StarShipShipAPI\Ship5.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\StarShipShipAPI\Ship6.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\StarShipShipAPI\ShipTransactions.wsdl" />
+    <None Include="Service References\StarShipShipAPI\TryShipAPI.StarShipShipAPI.AddPackageResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\StarShipShipAPI\TryShipAPI.StarShipShipAPI.AddPackageResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\StarShipShipAPI\TryShipAPI.StarShipShipAPI.AddPalletResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\StarShipShipAPI\TryShipAPI.StarShipShipAPI.AddPalletResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\StarShipShipAPI\TryShipAPI.StarShipShipAPI.AddShipmentResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\StarShipShipAPI\TryShipAPI.StarShipShipAPI.AddShipmentResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\StarShipShipAPI\TryShipAPI.StarShipShipAPI.CreateShipmentFromSourceIDResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\StarShipShipAPI\TryShipAPI.StarShipShipAPI.CreateShipmentResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\StarShipShipAPI\TryShipAPI.StarShipShipAPI.CreateShipmentResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\StarShipShipAPI\TryShipAPI.StarShipShipAPI.DeletePackageResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\StarShipShipAPI\TryShipAPI.StarShipShipAPI.DeletePackageResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\StarShipShipAPI\TryShipAPI.StarShipShipAPI.DeletePalletResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\StarShipShipAPI\TryShipAPI.StarShipShipAPI.DeletePalletResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\StarShipShipAPI\TryShipAPI.StarShipShipAPI.DeleteShipmentResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\StarShipShipAPI\TryShipAPI.StarShipShipAPI.DeleteShipmentResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\StarShipShipAPI\TryShipAPI.StarShipShipAPI.GetShipmentResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\StarShipShipAPI\TryShipAPI.StarShipShipAPI.GetShipmentResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\StarShipShipAPI\TryShipAPI.StarShipShipAPI.GetShippingDocumentsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\StarShipShipAPI\TryShipAPI.StarShipShipAPI.GetShippingDocumentsResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\StarShipShipAPI\TryShipAPI.StarShipShipAPI.LoadSourceDocumentResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\StarShipShipAPI\TryShipAPI.StarShipShipAPI.LoadSourceDocumentResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\StarShipShipAPI\TryShipAPI.StarShipShipAPI.PalletizeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\StarShipShipAPI\TryShipAPI.StarShipShipAPI.PalletizeResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\StarShipShipAPI\TryShipAPI.StarShipShipAPI.PrintShippingDocumentResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\StarShipShipAPI\TryShipAPI.StarShipShipAPI.PrintShippingDocumentResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\StarShipShipAPI\TryShipAPI.StarShipShipAPI.SearchSourceDocumentsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\StarShipShipAPI\TryShipAPI.StarShipShipAPI.SearchSourceDocumentsResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\StarShipShipAPI\TryShipAPI.StarShipShipAPI.ShipShipmentByIDResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\StarShipShipAPI\TryShipAPI.StarShipShipAPI.ShipShipmentResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\StarShipShipAPI\TryShipAPI.StarShipShipAPI.ShipShipmentResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\StarShipShipAPI\TryShipAPI.StarShipShipAPI.ShipSourceDocumentByIDResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\StarShipShipAPI\TryShipAPI.StarShipShipAPI.ShipSourceDocumentResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\StarShipShipAPI\TryShipAPI.StarShipShipAPI.UpdateShipmentResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\StarShipShipAPI\TryShipAPI.StarShipShipAPI.UpdateShipmentResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\StarShipShipAPI\TryShipAPI.StarShipShipAPI.VoidPackageResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\StarShipShipAPI\TryShipAPI.StarShipShipAPI.VoidPackageResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\StarShipShipAPI\TryShipAPI.StarShipShipAPI.VoidShipmentResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\StarShipShipAPI\TryShipAPI.StarShipShipAPI.VoidShipmentResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\StarShipShipAPI\TryShipAPI.StarShipShipAPI.WritebackShipmentByIDResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\StarShipShipAPI\TryShipAPI.StarShipShipAPI.WritebackShipmentResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\StarShipRateAPI\" />
+    <WCFMetadataStorage Include="Service References\StarShipShipAPI\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\StarShipShipAPI\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\StarShipShipAPI\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\StarShipShipAPI\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\StarShipRateAPI\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\StarShipRateAPI\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\StarShipRateAPI\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

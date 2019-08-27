@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="e0552086-3d8d-4a52-b24d-ccb075b99ed4" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address=" http://DEV00:3315/WebServicesServer?WSDL" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="WebServicesServer.xsd" MetadataType="Schema" ID="560f4160-a424-4c12-84fc-5c1a49c99763" SourceId="1" SourceUrl="http://dev00:3315/WebServicesServer?xsd=xsd5" />
+    <MetadataFile FileName="WebServicesServer1.xsd" MetadataType="Schema" ID="52fe0e1e-79dd-422f-94f2-64ee446e4cf3" SourceId="1" SourceUrl="http://dev00:3315/WebServicesServer?xsd=xsd3" />
+    <MetadataFile FileName="WebServicesServer2.xsd" MetadataType="Schema" ID="c6e1eee3-e75e-460a-9ac1-92d066b1cc72" SourceId="1" SourceUrl="http://dev00:3315/WebServicesServer?xsd=xsd8" />
+    <MetadataFile FileName="WebServicesServer3.xsd" MetadataType="Schema" ID="0e9ef43a-0101-4440-a30e-599dedac5905" SourceId="1" SourceUrl="http://dev00:3315/WebServicesServer?xsd=xsd6" />
+    <MetadataFile FileName="WebServicesServer4.xsd" MetadataType="Schema" ID="b32bc0b5-d348-4ca4-8b5a-2e84962e2974" SourceId="1" SourceUrl="http://dev00:3315/WebServicesServer?xsd=xsd4" />
+    <MetadataFile FileName="WebServicesServer5.xsd" MetadataType="Schema" ID="1ae776c5-3676-4b0f-9c06-ad939727ee21" SourceId="1" SourceUrl="http://dev00:3315/WebServicesServer?xsd=xsd2" />
+    <MetadataFile FileName="WebServicesServer6.xsd" MetadataType="Schema" ID="71c4df9a-0c5e-487a-a5bf-2a6febf96e50" SourceId="1" SourceUrl="http://dev00:3315/WebServicesServer?xsd=xsd1" />
+    <MetadataFile FileName="WebServicesServer7.xsd" MetadataType="Schema" ID="a44bdce0-5792-4acf-bc3e-d2ec4d6ac50b" SourceId="1" SourceUrl="http://dev00:3315/WebServicesServer?xsd=xsd9" />
+    <MetadataFile FileName="WebServicesServer8.xsd" MetadataType="Schema" ID="8e9e8e21-6162-418e-80b6-15b12493e990" SourceId="1" SourceUrl="http://dev00:3315/WebServicesServer?xsd=xsd0" />
+    <MetadataFile FileName="WebServicesServer.wsdl" MetadataType="Wsdl" ID="16bc5def-700d-4637-b2d1-68761365cf51" SourceId="1" SourceUrl="http://dev00:3315/WebServicesServer?wsdl=wsdl0" />
+    <MetadataFile FileName="WebServicesTransactions.wsdl" MetadataType="Wsdl" ID="1506d7e6-ad61-499e-9993-72a694175752" SourceId="1" SourceUrl="http://dev00:3315/WebServicesServer?WSDL" />
+    <MetadataFile FileName="WebServicesServer9.xsd" MetadataType="Schema" ID="a5683aa8-8565-4cfc-a03d-45483f5c0ff7" SourceId="1" SourceUrl="http://dev00:3315/WebServicesServer?xsd=xsd7" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="8c222cd2-45b7-4a25-88bd-987a42ac1fe5" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://dev00:3316/Ship?wsdl" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="Ship.wsdl" MetadataType="Wsdl" ID="c02e9c21-b822-472a-bff4-9f2f031172c8" SourceId="1" SourceUrl="http://dev00:3316/Ship?wsdl=wsdl0" />
+    <MetadataFile FileName="ShipTransactions.wsdl" MetadataType="Wsdl" ID="89b950e5-2fca-40b2-9066-d5bd2d77133b" SourceId="1" SourceUrl="http://dev00:3316/Ship?wsdl" />
+    <MetadataFile FileName="Ship.xsd" MetadataType="Schema" ID="b2566429-7b8e-499b-ab33-1c7dffc5f271" SourceId="1" SourceUrl="http://dev00:3316/Ship?xsd=xsd0" />
+    <MetadataFile FileName="Ship1.xsd" MetadataType="Schema" ID="36c069a4-f5c7-47b6-90bf-bc30ebea1d52" SourceId="1" SourceUrl="http://dev00:3316/Ship?xsd=xsd5" />
+    <MetadataFile FileName="Ship2.xsd" MetadataType="Schema" ID="9a4f9b40-a96a-48c0-a25c-06c0b3982522" SourceId="1" SourceUrl="http://dev00:3316/Ship?xsd=xsd6" />
+    <MetadataFile FileName="Ship3.xsd" MetadataType="Schema" ID="7cd09206-4260-42d1-a376-60ae88646a2f" SourceId="1" SourceUrl="http://dev00:3316/Ship?xsd=xsd1" />
+    <MetadataFile FileName="Ship4.xsd" MetadataType="Schema" ID="27b800e7-8c79-43a5-91ee-4580889e6303" SourceId="1" SourceUrl="http://dev00:3316/Ship?xsd=xsd4" />
+    <MetadataFile FileName="Ship5.xsd" MetadataType="Schema" ID="b9922720-8f36-4b96-b898-8a59c06c41a3" SourceId="1" SourceUrl="http://dev00:3316/Ship?xsd=xsd2" />
+    <MetadataFile FileName="Ship6.xsd" MetadataType="Schema" ID="de4a256e-9a1f-442a-be34-dd41984666ab" SourceId="1" SourceUrl="http://dev00:3316/Ship?xsd=xsd3" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

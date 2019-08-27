@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/VTechnologies.SourceShared.Model" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/VTechnologies.SourceShared.Model" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://dev00:3316/Ship?xsd=xsd5" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:complexType name="ArrayOfSourceSearchCondition">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="SourceSearchCondition" nillable="true" type="tns:SourceSearchCondition" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfSourceSearchCondition" nillable="true" type="tns:ArrayOfSourceSearchCondition" />
+  <xs:complexType name="SourceSearchCondition">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="FieldName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FieldType" type="tns:TFieldType" />
+      <xs:element minOccurs="0" name="Operator" type="tns:SourceSearchOperator" />
+      <xs:element xmlns:q1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="Values" nillable="true" type="q1:ArrayOfstring" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SourceSearchCondition" nillable="true" type="tns:SourceSearchCondition" />
+  <xs:simpleType name="TFieldType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="ftString" />
+      <xs:enumeration value="ftBoolean" />
+      <xs:enumeration value="ftInteger" />
+      <xs:enumeration value="ftFloat" />
+      <xs:enumeration value="ftMoney" />
+      <xs:enumeration value="ftDateTime" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="TFieldType" nillable="true" type="tns:TFieldType" />
+  <xs:simpleType name="SourceSearchOperator">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="soEquals" />
+      <xs:enumeration value="soNotEqual" />
+      <xs:enumeration value="soGreaterThan" />
+      <xs:enumeration value="soLessThan" />
+      <xs:enumeration value="soGreaterEqual" />
+      <xs:enumeration value="soLessEqual" />
+      <xs:enumeration value="soBeginsWith" />
+      <xs:enumeration value="soContains" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="SourceSearchOperator" nillable="true" type="tns:SourceSearchOperator" />
+</xs:schema>
